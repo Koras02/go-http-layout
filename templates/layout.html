@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ .Title }}</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <!-- CSS 파일 불러오기 -->
+  </head>
+
+  <body>
+    <div class="body-container">
+      <header>
+        <h1>{{ .Title }}</h1>
+        <nav class="nav-container">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <!-- Content will be injected here -->
+        <p>여기에 콘텐츠가 들어갑니다.</p>
+      </main>
+      <footer>
+        <p>&copy; 2023 My Blog. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
